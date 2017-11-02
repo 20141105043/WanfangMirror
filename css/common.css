@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* 边框--less匹配模式 */
+/* 单边框--less匹配模式 */
+.cell {
+  display: table-cell;
+  width: 9999px;
+  *display: inline-block;
+  *width: auto;
+}
+/* 行高 */
+/* 省略号 */
+/* 三角形背景 */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Microsoft Yahei", "微软雅黑";
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+img {
+  border: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a,
+p {
+  text-decoration: none;
+  color: #666666;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  border-radius: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+b,
+em,
+i,
+strong,
+th {
+  font-style: normal;
+  font-weight: 400;
+}
+span {
+  color: #666666;
+}
+/* 通用 */
+.common {
+  *zoom: 1;
+}
+.common:before,
+.common:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.common:after {
+  clear: both;
+}
+.left {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+.left ul {
+  margin-top: 30px;
+}
+.left li {
+  padding-left: 100px;
+  line-height: 50px;
+}
+.left li:hover {
+  padding-left: 97px;
+  border-left: 3px solid #22c0cb;
+  background-color: #fff;
+}
+.left li a {
+  font-size: 14px;
+}
+.right {
+  display: table-cell;
+  width: 9999px;
+  *display: inline-block;
+  *width: auto;
+}
+.time {
+  padding-top: 12px;
+  height: 48px;
+  background-color: #f9f9f9;
+}
+.time .startTime,
+.time .endTime {
+  display: inline-block;
+  margin-left: 30px;
+}
+.time .startTime label,
+.time .endTime label {
+  height: 32px;
+  line-height: 32px;
+}
+.time .startTime input,
+.time .endTime input {
+  padding-left: 14px;
+  width: 120px;
+  height: 32px;
+}
+.time .startTime i,
+.time .endTime i {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 28px;
+  height: 27px;
+  background: url("../images/common.png") -10px -61px;
+}
+.time .startTime span,
+.time .endTime span {
+  display: inline-block;
+  position: relative;
+  width: 168px;
+  height: 32px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+.contain {
+  padding-left: 55px;
+}
+.contain .con-head {
+  *zoom: 1;
+  padding-top: 15px;
+  height: 45px;
+}
+.contain .con-head:before,
+.contain .con-head:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.contain .con-head:after {
+  clear: both;
+}
+.contain .dateSelect {
+  float: left;
+}
+.contain .dateSelect label {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+.contain .dateSelect span {
+  display: inline-block;
+  position: relative;
+  padding-left: 6px;
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #cccccc;
+}
+.contain .dateSelect input {
+  display: inline-block;
+  width: 91px;
+  height: 28px;
+}
+.contain .dateSelect i {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: url("../images/common.png") -61px -10px;
+}
+.contain .export {
+  float: right;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ea5f4a;
+}
+.contain .export a {
+  display: inline-block;
+  padding: 0 19px;
+  color: #fff;
+}
+.contain .con-main tr {
+  height: 45px;
+  line-height: 45px;
+  display: block;
+}
+.contain .con-main .tb-tit {
+  font-weight: 700;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background-color: #edf3f3;
+}
+.contain .con-main .tb-con {
+  border-bottom: 1px solid #cccccc;
+}
+.contain .con-main th {
+  text-align: center;
+}
+.contain .con-main .th-switch1 {
+  width: 699px;
+}
+.contain .con-main .th-switch2 {
+  width: 234px;
+}
+.contain .con-main .td-switch1 {
+  padding-left: 10px;
+  width: 688px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+.contain .con-main .td-switch2 {
+  width: 233px;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}

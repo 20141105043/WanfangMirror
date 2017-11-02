@@ -1,0 +1,166 @@
+@charset"utf-8";
+
+@import "../less/public.less";
+.reset();
+/* 通用 */
+.common {
+	.clearfix();
+}
+//左侧
+.left {
+	.fl();
+	margin-right: 10px;
+	width: 200px;
+	background-color: @bg_color;
+	overflow: hidden;
+	ul {
+		margin-top: 30px;
+	}
+	li {
+		padding-left: 100px;
+		line-height: 50px;
+		&:hover {
+			padding-left: 97px;
+			border-left: 3px solid @usual_color;
+			background-color: #fff;
+		}
+		a {
+			font-size: 14px;
+		}
+	}
+}
+//右侧
+.right {
+	.cell;
+}
+//时间
+.time {
+	padding-top: 12px;
+	height: 48px;
+	background-color: @bg_color;
+	.startTime,.endTime {
+		.d-ib();
+		margin-left: 30px;
+		label {
+			height: 32px;
+			line-height: 32px;
+		}
+		input {
+			padding-left: 14px;
+			width: 120px;
+			height: 32px;
+		}
+		i {
+			.d-ib();
+			position: absolute;
+			top: 2px;
+			right: 0;
+			width: 28px;
+			height: 27px;
+			background: url("../images/common.png") -10px -61px;
+		}
+		span {
+			.d-ib();
+			position: relative;
+			width: 168px;
+			height: 32px;
+			.allb(solid);
+			background-color: #fff;
+		}
+	}
+}
+.contain {
+	padding-left: 55px;
+	.con-head {
+		.clearfix();
+		padding-top: 15px;
+		height: 45px;
+	}
+	.dateSelect {
+		.fl();
+		label{
+			.d-ib();
+			height: 30px;
+			line-height: 30px;
+		}
+		span {
+			.d-ib();
+			position: relative;
+			padding-left: 6px;
+			width: 120px;
+			height: 28px;
+			line-height: 28px;
+			.allb(solid);
+		}
+		input {
+			.d-ib();
+			width: 91px;
+			height: 28px;
+		}
+		i {
+			.d-ib();
+			position: absolute;
+			top: 0px;
+			right: 0;
+			width: 28px;
+			height: 28px;
+			background: url("../images/common.png") -61px -10px;
+		}
+	}
+	.export {
+		.fr();
+		width: 110px;
+		height: 30px;
+		line-height: 30px;
+		background-color: #ea5f4a;
+		a {
+			.d-ib();
+			padding: 0 19px;
+			color: #fff;
+		}
+		
+	}
+	.con-main {
+		table {
+
+		}
+		tr {
+			height: 45px;
+			line-height: 45px;
+			.d-b();
+		}
+		.tb-tit {
+			
+			.font-w700();
+			.ubb(solid);
+		    background-color: #edf3f3;
+		}
+		.tb-con {
+			
+			border-bottom: 1px solid @boder_color;
+		}
+		th {
+			.tc();
+		}
+		.th-switch1 {
+			width: 699px;
+		}
+		.th-switch2 {
+			width: 234px;
+		}
+		td {
+
+		}
+		.td-switch1 {
+			padding-left: 10px;
+			width: 688px;
+		 	border-left: 1px solid @boder_color;
+			border-right: 1px solid @boder_color; 
+		}
+		.td-switch2 {
+			width: 233px;
+			.tc();
+			border-right: 1px solid @boder_color; 
+		}
+	}
+}
