@@ -1,2 +1,1 @@
 # WanfangMirror
-镜像
